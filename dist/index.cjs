@@ -24,14 +24,7 @@ __export(index_exports, {
 });
 module.exports = __toCommonJS(index_exports);
 var thousandsSeparator = (num, sep = ",") => {
-  try {
-    if (sep) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, sep);
-    }
-    return num.toString();
-  } catch (error) {
-    console.error(error);
-  }
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, sep);
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
