@@ -6,8 +6,9 @@
     "thousands-separator",
     "num-commas",
     "number-separator",
-    "typescript",
-    "format-number"
+    "format-number",
+    "javascript",
+    "typescript"
   ],
   "homepage": "https://github.com/PurinPintakhiew/thousands-separator-js#readme",
   "bugs": {
