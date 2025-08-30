@@ -1,0 +1,38 @@
+{
+  "name": "thousands-separator-js",
+  "version": "1.0.0",
+  "description": "A simple utility for formatting numbers with thousands separators.",
+  "keywords": [
+    "thousands-separator",
+    "num-commas",
+    "number-separator",
+    "typescript",
+    "format-number"
+  ],
+  "homepage": "https://github.com/PurinPintakhiew/thousands-separator-js#readme",
+  "bugs": {
+    "url": "https://github.com/PurinPintakhiew/thousands-separator-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PurinPintakhiew/thousands-separator-js.git"
+  },
+  "license": "MIT",
+  "author": "Purin Pintakhiew",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
