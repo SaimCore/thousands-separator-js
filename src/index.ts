@@ -1,11 +1,3 @@
-export const thousandsSeparator = (num: number, sep = ',') => {
-    try {
-        if (sep) {
-            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, sep);
-        }
-
-        return num.toString();
-    } catch (error) {
-        console.error(error);
-    }
+export const thousandsSeparator = (num: number, sep: string = ','): string => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, sep);
 }
