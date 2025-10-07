@@ -9,8 +9,8 @@ A package to thousands separator
 [![npm bundle size](https://img.shields.io/bundlephobia/min/thousands-separator-js)](https://www.npmjs.com/package/thousands-separator-js)
 
 ## Install
-```npm
-npm i thousands-separator-js
+```bash
+npm i @saimcore/thousands-separator-js
 ```
 
 ## Usage

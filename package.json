@@ -1,7 +1,10 @@
 {
-  "name": "thousands-separator-js",
+  "name": "@saimcore/thousands-separator-js",
   "version": "1.0.0",
   "description": "A simple utility for formatting numbers with thousands separators.",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "thousands-separator",
     "num-commas",
@@ -10,13 +13,13 @@
     "javascript",
     "typescript"
   ],
-  "homepage": "https://github.com/PurinPintakhiew/thousands-separator-js#readme",
+  "homepage": "https://github.com/SaimCore/thousands-separator-js#readme",
   "bugs": {
-    "url": "https://github.com/PurinPintakhiew/thousands-separator-js/issues"
+    "url": "https://github.com/SaimCore/thousands-separator-js/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PurinPintakhiew/thousands-separator-js.git"
+    "url": "git+https://github.com/SaimCore/thousands-separator-js.git"
   },
   "license": "MIT",
   "author": "Purin Pintakhiew",
