@@ -17,3 +17,4 @@ var thousandsSeparator = (number, decimals = 0, sep = ",") => {
 export {
   thousandsSeparator
 };
+//# sourceMappingURL=index.js.map

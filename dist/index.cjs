@@ -42,3 +42,4 @@ var thousandsSeparator = (number, decimals = 0, sep = ",") => {
 0 && (module.exports = {
   thousandsSeparator
 });
+//# sourceMappingURL=index.cjs.map
