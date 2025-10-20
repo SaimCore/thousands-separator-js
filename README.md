@@ -15,8 +15,9 @@ npm i @saimcore/thousands-separator-js
 
 ## Usage
 ```javascript
-thousandsSeparator(1000); // 1,000
-thousandsSeparator(1000, ','); // 1,000
-thousandsSeparator(1000, ''); // 1000
-thousandsSeparator(2750.50); // 2,750.50
+console.log(thousandsSeparator(1000)); // 1,000
+console.log(thousandsSeparator(1000, 2)); // 1,000.00
+console.log(thousandsSeparator(1000, 2, '')); // 1000.00
+console.log(thousandsSeparator(2750.50)); // 2,751
+console.log(thousandsSeparator(2750.50, 1)); // 2,750.5
 ```
