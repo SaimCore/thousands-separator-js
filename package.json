@@ -1,6 +1,6 @@
 {
   "name": "@saimcore/thousands-separator-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple utility for formatting numbers with thousands separators.",
   "publishConfig": {
     "access": "public"
