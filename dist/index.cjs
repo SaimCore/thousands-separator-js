@@ -23,8 +23,20 @@ __export(index_exports, {
   thousandsSeparator: () => thousandsSeparator
 });
 module.exports = __toCommonJS(index_exports);
-var thousandsSeparator = (num, sep = ",") => {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, sep);
+var thousandsSeparator = (number, decimals = 0, sep = ",") => {
+  try {
+    if (number == null || isNaN(number)) {
+      return "";
+    }
+    const decimalPlaces = Math.max(0, Math.floor(decimals));
+    const fixed = number.toFixed(decimalPlaces);
+    const [integerPart, decimalPart] = fixed.split(".");
+    const withSeparator = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, sep);
+    return decimalPart ? `${withSeparator}.${decimalPart}` : withSeparator;
+  } catch (err) {
+    console.error(err);
+    return "";
+  }
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

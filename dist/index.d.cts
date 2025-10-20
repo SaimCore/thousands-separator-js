@@ -1,3 +1,3 @@
-declare const thousandsSeparator: (num: number, sep?: string) => string;
+declare const thousandsSeparator: (number: number, decimals?: number, sep?: string) => string;
 
 export { thousandsSeparator };
